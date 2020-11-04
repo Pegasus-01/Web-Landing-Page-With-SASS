@@ -1,0 +1,29 @@
+@import "mixin";
+@import "_btn";
+html{
+    height: 100vh;
+    @include coverimage('images/pexels-james-wheeler-1539225.jpg');
+}
+body{
+    h1{
+        color: #f3b431;
+        text-align: center;
+        margin-top: 5%;
+        font-size: 3rem;
+    }
+    p{
+        color: whitesmoke;
+        text-align: center;
+    }
+}
+.container{
+    text-align: center;
+}
+.btn-youtube{
+    @extend %btn;
+    background-color: orange;
+}
+.btn-courses{
+    @extend %btn;
+    background-color: red;
+}
